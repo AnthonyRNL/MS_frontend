@@ -7,8 +7,12 @@
     <div id="todo">
       <div id="container">
         <h1>What should I be doing now?</h1>
-        <input id="new-todo" placeholder="What else I gotta do?">
-        <a id="addButt">Add Item</a>
+        <div id="head">
+          <div id="headitems">
+            <input id="new-todo" placeholder="What else I gotta do?">
+            <a id="addButt">Add Item</a>
+          </div>
+        </div>
         <div id=main>
           <ul id="todo-list"></ul>
         </div>
@@ -20,7 +24,7 @@
           <input type="checkbox" class="toggle" <%= completed ? 'checked' : ''%>>
           <span><%=title%></span>
         </label>
-        <button class="destroy">Clear</button>
+        <a href="" class="destroy">x</a>
       </div>
     </script>
     <script src="http://code.jquery.com/jquery-1.11.1.js"></script>

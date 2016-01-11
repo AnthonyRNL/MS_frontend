@@ -5,25 +5,34 @@ body{
   font-family: "Raleway";
 }
 #container {
+  width: 500px;
+  position:relative;
+  margin: auto;
   margin-top: 15%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  border-style: dashed;
+  border-style: solid;
   border-width: 2px;
   border-color: grey;
-  margin: 60px;
+  border-radius: 15px;
 }
 #todo-list{
-  margin:auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: 300px;
+  padding-left: 0;
 }
 #new-todo{
+  height: 40px;
+  width: 300px;
+  font-size: 16pt;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+#head{
   position: relative;
-  height: 30px;
-  width: 400px;
+
+}
+#headitems{
+  margin-right: 60px;
 }
 :checked  + span{
   text-decoration: line-through;
@@ -36,19 +45,36 @@ ul{
   font-size: 16pt;
 }
 
+li{
+  padding:4px;
+}
+
 li:nth-child(even){
   background-color: #eee;
 }
 .value{
   text-align: left;
   margin-left: 20px;
+  margin-right: 20px;
 }
 
 #addButt{
   position:absolute;
+  padding-left: 3px;
+  padding-right: 3px;
   background-color: #2AD474;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
   color: white;
+  height:40px;
+  line-height: 28pt;
 }
 .destroy{
   float: right;
+  color: gray;
+  text-decoration: none;
+}
+
+.destroy:hover{
+  color: #2AD474
 }

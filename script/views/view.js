@@ -16,6 +16,7 @@ app.TodoView = Backbone.View.extend({
   },
   clear: function(){
     this.model.destroy()
+    return false
   },
   togglecompleted: function(){
     this.model.toggle()
