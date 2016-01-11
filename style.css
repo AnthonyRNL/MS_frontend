@@ -10,8 +10,6 @@ body{
   margin: auto;
   margin-top: 15%;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   border-style: solid;
   border-width: 2px;
   border-color: grey;
@@ -34,6 +32,7 @@ body{
 #headitems{
   margin-right: 60px;
 }
+
 :checked  + span{
   text-decoration: line-through;
   color: grey;
@@ -68,6 +67,28 @@ li:nth-child(even){
   color: white;
   height:40px;
   line-height: 28pt;
+}
+@media (max-width:600px){
+  #container{
+    width: 250px;
+  }
+  h1{
+    font-size: 14pt;
+  }
+  #new-todo{
+    height: 30px;
+    width: 150px;
+    font-size: 11pt;
+  }
+  #addButt{
+    height: 30px;
+    line-height: 20pt;
+    font-size: 11pt;
+  }
+  #headitems{
+    margin-right: 65px;
+  }
+
 }
 .destroy{
   float: right;
